@@ -1,0 +1,15 @@
+[package]
+name = "rust-dynamic-dns-aws-route53"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws-config = { version = "1.0.1", features = ["behavior-version-latest"] }
+aws-sdk-route53 = "1.13.1"
+clap = { version = "4.3.19", features = ["derive"] }
+hyper = "0.14.27"
+hyper-openssl = "0.9.2"
+tokio = { version = "1", features = ["full"] }
+rust-otp = {git = "https://github.com/WesleyBatista/rust-otp"}
